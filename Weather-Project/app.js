@@ -19,7 +19,7 @@ app.get("/", function(req, res) {
 app.post("/", function(req, res) {
     //accessing the input thru bodyParser using the **name attribute**
     const query = req.body.cityName;
-    const apiKey = "eea3e1cd2b47c3f7a5d262dae4fe82e8";
+    const apiKey = "hidden";
     const units = "metric"
 
     const url = "https://api.openweathermap.org/data/2.5/weather?q=" + query + "&appid=" + apiKey + "&units=" + units;
