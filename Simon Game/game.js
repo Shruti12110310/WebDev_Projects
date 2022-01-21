@@ -10,7 +10,6 @@ $(document).keyup(function(){
     if(level===0){
     $("h1").text("Level "+level);
     nextSequence();
-    // gameStart();
     }
     
 });
@@ -52,15 +51,6 @@ function animatePress(currentColour){
     setTimeout(function(){
     $("#"+currentColour).removeClass("pressed");},100);
 }
-
-// function gameStart(){
-//     nextSequence();
-//     while(gamePattern[gamePattern.length-1]===userClickedPattern[gamePattern.length-1]){
-//         gameStart();
-//     }
-// }
-
-//checking answer
 
 function checkAnswer(currentLevel){
     if(userClickedPattern[currentLevel]===gamePattern[currentLevel]){
